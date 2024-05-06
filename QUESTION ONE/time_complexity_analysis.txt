@@ -1,0 +1,10 @@
+The Merge Sort algorithm has a time complexity of O(n log n), 
+where n represents the number of elements in the list. 
+This time complexity is consistent as each split operation divides the list into two halves (O(log n)), 
+and the merge operation takes linear time (O(n)). 
+Merge Sort is an extremely efficient sorting algorithm for large data sets, 
+and it is also a stable sorting algorithm that preserves the relative order of equal elements. 
+Compared to other sorting algorithms like QuickSort, which can be faster in practice, 
+Merge Sort has a consistent time complexity without degrading to O(n^2) in worst-case scenarios. 
+Heapsort is another stable sorting algorithm with a similar time complexity to Merge Sort, but it can be less efficient in practice. 
+Bubble Sort, Insertion Sort, and Selection Sort are less efficient for large lists with their O(n^2) time complexity.
