@@ -1,0 +1,25 @@
+<div>
+    <h2>Blog Posts</h2>
+    <table>
+      <thead>
+        <tr>
+          <th (click)="onSortChange('title', 'asc')">Title</th>
+          <th (click)="onSortChange('author', 'asc')">Author</th>
+          <th (click)="onSortChange('created_at', 'asc')">Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of blogPosts">
+          <td>{{ post.title }}</td>
+          <td>{{ post.author }}</td>
+          <td>{{ post.created_at }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <button (click)="onPageChange(page - 1)" [disabled]="page <= 1">Previous</button>
+      <span>Page {{ page }}</span>
+      <button (click)="onPageChange(page + 1)" [disabled]="page >= totalPosts / pageSize">Next</button>
+    </div>
+  </div>
+  
